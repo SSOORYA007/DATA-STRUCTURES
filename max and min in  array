@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+
+{
+	int a[]={85,96,53,32,98,32,98,55,77,12};
+	int size=sizeof(a)/sizeof(a[0]);
+	int min=a[0];
+	int max=a[0];
+	for(int i=0;i<size;i++)
+	{
+		if(a[i]>max)
+		  max=a[i];
+		if(a[i]<min)
+		  min=a[i];
+	}
+	printf("min =%d\nmax =%d",min,max);
+}
